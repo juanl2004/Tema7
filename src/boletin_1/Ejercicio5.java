@@ -95,7 +95,7 @@ public class Ejercicio5 {
 	}
 
 	/**
-	 * Este método nos pide el nombre por teclado. Verifica que le nombre se
+	 * Este método nos pide el nombre por teclado. Verifica que el nombre se
 	 * encuentra en el mapa, si es así, lo elimina. Si no, nos dice que ese nombre
 	 * no se encuentra en el sistema.
 	 * 
