@@ -18,8 +18,10 @@ public class Ejercicio4 {
 		// Variable donde almacenaremos el nombre que vayamos leyendo.
 		String nombre = "";
 
+		// Creamos el Scanner
 		Scanner sc = new Scanner(System.in);
 
+		// Le pedimos al usuario
 		System.out.println("Ingrese 5 nombres --> ");
 
 		// Con este for leemos los nombre y lo agregamos al conjunto y a la lista.
@@ -33,7 +35,7 @@ public class Ejercicio4 {
 				// Decrementamos el contador para volver a solicitar el nombre.
 				i--;
 			} else {
-			nombresL.add(nombre);
+				nombresL.add(nombre);
 			}
 		}
 

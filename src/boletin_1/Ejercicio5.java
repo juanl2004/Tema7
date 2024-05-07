@@ -10,6 +10,7 @@ public class Ejercicio5 {
 
 	public static void main(String[] args) {
 
+		/// Utilizamos Hashmap para poder listar claves valor.
 		Map<String, Integer> seriesTV = new HashMap<>();
 
 		// Variable donde guardamos el valor de la opción seleccionada.
@@ -56,6 +57,12 @@ public class Ejercicio5 {
 
 	}
 
+	/**
+	 * Este metodo le pide al usuario el nombre y la valoración y los introduce en
+	 * la lista usando el put.
+	 * 
+	 * @param seriesTV El mapa donde almacenaremos nuestras series con valoraciones.
+	 */
 	public static void agregarSerie(Map<String, Integer> seriesTV) {
 		System.out.println("Introduce el nombre de la serie --> ");
 		String nombre = sc.nextLine();
@@ -68,6 +75,13 @@ public class Ejercicio5 {
 				"La serie \"" + nombre + "\" con una valoración de " + valoracion + " se ha agregado correctamente.");
 	}
 
+	/**
+	 * Método que nos pide por teclado el nombre de la serie y nos busca si la
+	 * clave, ese nombre se encuentra en la clave si es asi, nos devuelve el nombre
+	 * y la valoración.
+	 * 
+	 * @param seriesTV El mapa donde almacenaremos nuestras series con valoraciones.
+	 */
 	public static void buscarSerie(Map<String, Integer> seriesTV) {
 		System.out.println("Introduce el nombre de la serie que quieres buscar --> ");
 		String nombre = sc.nextLine();
@@ -80,6 +94,13 @@ public class Ejercicio5 {
 		}
 	}
 
+	/**
+	 * Este método nos pide el nombre por teclado. Verifica que le nombre se
+	 * encuentra en el mapa, si es así, lo elimina. Si no, nos dice que ese nombre
+	 * no se encuentra en el sistema.
+	 * 
+	 * @param seriesTV El mapa donde almacenaremos nuestras series con valoraciones.
+	 */
 	public static void eliminarSerie(Map<String, Integer> seriesTV) {
 		System.out.println("Introduce el nombre de la serie que quieres eliminar --> ");
 		String nombre = sc.nextLine();
